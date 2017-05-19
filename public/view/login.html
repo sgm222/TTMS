@@ -1,0 +1,20 @@
+<link href='css/login.css' rel='stylesheet' type='text/css'>
+<section class="demo">
+    <div class="left">
+        <img src="../img/adv1.jpg">
+    </div>
+    <div class="login-right">
+        <form class="col-sm-offset-4 col-sm-4 form-horizontal" role="form" method="post" onsubmit="return false">
+            <div class="panel-heading">
+                <p class="tc">登录</p>
+            </div>
+                                 
+            <input type="text" class="form-control" id="username" name="username" placeholder="请输入用户名" ng-model="user.name" required >
+            <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码" ng-model="user.password" required>  <label><input type="radio" id="form-radio" name="people"  value="user" ng-checked="true" ng-model="user.flag">会员</label>
+            <label><input type="radio" id="form-radio1" name="people"  value="admin" ng-model="user.flag">管理员</label>
+            <button type="submit" class="bnt" id="login0" ng-click="login()">登录</button>
+            <button type="button" class="btn btn-info col-sm-2 col-sm-offset-10" id="register0" ng-click="register()">注册</button>
+            <div class="err" ng-show="err" ng-bind="err"></div>
+        </form>   
+    </div>
+</section>

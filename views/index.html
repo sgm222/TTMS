@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-controller="LayoutController">
+<head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css" type='text/css' media="all"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+</head>
+
+
+<body  ng-cloak>
+    <div class="wrap_top_nav">
+        <nav id="top_nav">
+            <img style="float:left;" src="img/logo.png" alt="西柚影院">
+            <ul class="inline-style clearfix">
+                <li class="active"><a href="#/">{{txt.home}}</a></li>
+                <li class="active"><a href="#/{{login.url}}">{{login.name}}</a></li>
+                <li class="active"><a href="#/{{signup.url}}">{{signup.name}}</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="page" ng-view=""></div>
+    <script type="text/javascript" charset="UTF-8" src="lib/prefixfree.min.js"></script>  
+    <script data-main="js/main-built" src="lib/require/require.min.js"></script>
+    <script data-main="js/main-built" src="jQuery1.11.3/jquery-1.11.3.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
