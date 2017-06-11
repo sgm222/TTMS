@@ -10,7 +10,6 @@ var adminfindmodel=UsersModel.find({"$where":"this.flag == 'admin'"})
 exports.list = function (req, res) {
     res.send("respond with a resource");
 };
-
 exports.create = function (req, res) {
     var createUser = new UsersModel(req.body);
     if(req.body.name=='')

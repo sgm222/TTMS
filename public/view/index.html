@@ -5,18 +5,18 @@
 	   <div class="header_top">
 			<ul>
 				<li><a href="#/movie">全部影片</a></li>
-				<li><a href="">全部影院</a></li>
-				<li><a href="">今日特惠</a></li>
+				<li><a href="#/cenima">全部影院</a></li>
+				<li><a href="#/person">个人中心</a></li>
 				<li><input type="text"><button>搜索</button></li>
 			</ul>
 	    </div>
     	<div id="list" class="list">
 	        <ul>
-	            <li class="list-item-one"><img src="../img/index/1.jpg"></li>
-	            <li class="list-item"><img src="../img/index/2.jpg"></li>
-	            <li class="list-item"><img src="../img/index/3.jpg"></li>
-	            <li class="list-item"><img src="../img/index/4.jpg"></li>
-	            <li class="list-item"><img src="../img/index/5.jpg"></li>
+	            <li class="list-item-one"><img src="../img/index/1/1.jpg"></li>
+	            <li class="list-item"><img src="../img/index/2/1.jpg"></li>
+	            <li class="list-item"><img src="../img/index/3/1.jpg"></li>
+	            <li class="list-item"><img src="../img/index/4/1.jpg"></li>
+	            <li class="list-item"><img src="../img/index/5/1.jpg"></li>
 	        </ul>   
     	</div> 
 
@@ -24,53 +24,18 @@
 	    <div class="content">
 	      	<img src="img/index/hot.jpg">
 	      	<div class="photo">
-				<div class="photo1">
-					<span class="photo1-span">速度与激情8</span>
+				<div class="photo1" ng-repeat = "c in movies">
+					<span class="photo1-span">{{c.name}}</span>
 					<img src="img/index/rating1.png" style="display:inline-block">
 					<div class="jieshao">
-						<p>片长：130分钟</p>
-						<p>上映时间：2017.4.17</p>
-						<span>简介：哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或</span>
+						<p>片长：{{c.times}}分钟</p>
+						<p>上映时间：{{c.date}}</p>
+						<span class="">简介：{{c.direction}}</span>
 					</div>
-					<img class="photo1-img" src="img/index/1.jpg" />
+					<img class="photo1-img" src="img/index/{{c.img1}}" />
 					<button class="photo1-button">&nbsp&nbsp&nbsp&nbsp想看</button>
 				</div>
-				
-				<div class="photo1">
-					<span class="photo1-span">速度与激情8</span>
-					<img src="img/index/rating1.png" style="display:inline-block">
-					<div class="jieshao">
-						<p>片长：130分钟</p>
-						<p>上映时间：2017.4.17</p>
-						<span>简介：哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或</span>
-					</div>
-					<img class="photo1-img" src="img/index/2.jpg" />
-					<button class="photo1-button">&nbsp&nbsp&nbsp&nbsp想看</button>
-				</div>
-				
-				<div class="photo1">
-					<span class="photo1-span">速度与激情8</span>
-					<img src="img/index/rating1.png" style="display:inline-block">
-					<div class="jieshao">
-						<p>片长：130分钟</p>
-						<p>上映时间：2017.4.17</p>
-						<span>简介：哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或</span>
-					</div>
-					<img class="photo1-img" src="img/index/3.jpg" />
-					<button class="photo1-button">&nbsp&nbsp&nbsp&nbsp想看</button>
-				</div>
-
-				<div class="photo1">
-					<span class="photo1-span">速度与激情8</span>
-					<img src="img/index/rating1.png" style="display:inline-block">
-					<div class="jieshao">
-						<p>片长：130分钟</p>
-						<p>上映时间：2017.4.17</p>
-						<span>简介：哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或</span>
-					</div>
-					<img class="photo1-img" src="img/index/4.jpg" />
-					<button class="photo1-button">&nbsp&nbsp&nbsp&nbsp想看</button>
-				</div>
+					
 			</div>
       </div>
      <img src="img/index/cinma.jpg">

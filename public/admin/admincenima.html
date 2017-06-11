@@ -1,0 +1,342 @@
+<link rel="stylesheet" type="text/css" href="css/admincenima.css">
+<div class="header_top">
+			<ul>
+				<li><a href="#/admin">首页</a></li>
+			 	<li><a href="#/adminmovie">管理影片</a></li>
+				<li><a href="#/admincenima" style="color:#0088cc">管理影院</a></li>
+				<li><a href="#/adminplay">演出计划</a></li>
+				<li><a href="#/adminticket">管理票务</a></li>
+			</ul>
+</div>
+
+<hr>
+<div class="row clearfix">
+	<div class="col-md-12 row">
+		 <div class="addmovie">
+			<button type="button" class="btn btn-primary btn-xs" onclick="addcenima()">新影院上线</button>
+			<div class="add" id="add">
+
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button  class="close" onclick="closeadd()">×</button>
+							<h4 class="modal-title" id="myModalLabel">添加/编辑影院</h4>
+						</div>
+						<div class="modal-body">
+
+							<form class="form-horizontal" role="form">
+
+								<div class="form-group">
+									<label for="id" class="col-sm-2 control-label">影院编号</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w300" id="id" ng-model="cenima.id" ng-readonly="true"/>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="name" class="col-sm-2 control-label">影院名称</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w300" id="name" ng-model="cenima.name" onblur="checkName()" />
+										<span style = "color:red">*</span> 
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="tel" class="col-sm-2 control-label">联系电话</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w200" id="tel" ng-model="cenima.tel" onblur="checkTel()" placeholder = "座机号格式：XXX-XXXXXXXX" />
+										<span style = "color:red">*</span> 
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="time" class="col-sm-2 control-label">工作时间</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w200" id="time" ng-model="cenima.time" onblur="checkTime()" placeholder = "例：11:00-1:00"/>
+										<span style = "color:red">*</span> 
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="address" class="col-sm-2 control-label">地址</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w200" id="address" ng-model="cenima.address" onblur = "checkAddr()"/>
+										<span style = "color:red">*</span> 
+									</div>
+								</div>
+
+							</form>
+
+						</div>
+						<div class="modal-footer">
+							<button type="button" ng-click="save()" class="btn btn-primary" onclick="checkAll()">
+							<span class="glyphicon glyphicon-floppy-disk"></span>保存</button>
+							<button type="button" class="btn btn-success" ng-click="clear()" data-dismiss="modal">
+								<span class="glyphicon glyphicon-refresh"></span> 
+								清空</button>
+							<button type="button" class="btn btn-danger" data-dismiss="modal">
+								<span class="glyphicon glyphicon-remove"></span> 
+								关闭</button>
+						</div>
+						<div class="err" ng-show="err" ng-bind="err"></div>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<table class="table">
+			<thead>
+				<tr>
+					<th class = "small">影院编号</th>
+					<th class = "big">影片名称</th>
+					<th class = "big">联系电话</th>
+					<th class = "small">工作时间</th>
+					<th class = "big">地址</th>
+					<th></th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr  ng-repeat="c in cenimas">
+					
+					<td class = "small_1">
+						{{c.id}}
+					</td>
+					<td class = "small">
+						{{c.name}}
+					</td>
+					<td class = "small">
+						{{c.tel}}
+					</td>
+					<td class = "small">
+						{{c.time}}
+					</td>
+					<td class = "small_1">
+						{{c.address}}
+					</td>
+				
+					<td>
+						<button type="button" class="btn btn-danger btn-xs" ng-click="del(c.id)">删除</button>
+						<button role="button" class="btn btn-xs btn-primary" data-toggle="modal" ng-click="edit(c)" onclick="addcenima()">编辑</button>
+						<button type="button" class="btn btn-success btn-xs" ng-click="hall(c.id)" onclick="slide()">管理影厅</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+<div id="slide" class="slide">
+	<div class="outtable">
+		<button  class="closehall" onclick="closeslide()">×</button>
+			<table class="table">
+			<thead>
+				<tr>
+					<th class = "small">影厅编号</th>
+					<th class = "big">影厅名称</th>
+					<th class = "big">影厅行数</th>
+					<th class = "small">影厅列数</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr  ng-repeat="h in halls">
+					
+					<td class = "small_1">
+						{{h.id}}
+					</td>
+					<td class = "small">
+						{{h.name}}
+					</td>
+					<td class = "small">
+						{{h.row}}
+					</td>
+					<td class = "small">
+						{{h.col}}
+					</td>
+				
+					<td>
+						<button type="button" class="btn btn-danger btn-xs" ng-click="delhall(h.id)">删除</button>
+						<button role="button" class="btn btn-xs btn-primary" data-toggle="modal" ng-click="edithall(h)" onclick="addhall()">编辑</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<button type="button" class="btn btn-primary btn-xs" style="margin-left:500px" onclick="addhall()">添加新影厅</button>
+
+		<div class="addhall" id="addhall">
+			<div class="hallinput">影厅名称
+			<input type="text" style="width:100px" id="hallname" ng-model="hall.name" onblur="checkHallN()" />
+			<span style = "color:red">*</span>
+			</div>
+
+			<div class="hallinput">影厅行数
+			<input type="text"  style="width:100px" id="hallrow" ng-model="hall.row" onblur="checkHallR()" /><span style = "color:red">*</span></div>
+
+			<div class="hallinput">影厅列数
+			<input type="text"  style="width:100px" id="hallcol" ng-model="hall.col" onblur="checkHallC()" /><span style = "color:red">*</span></div>
+
+			<div class="hallbutton">
+				<button type="button" ng-click="savehall()" class="btn btn-primary" onclick="checkHallA()">保存</button>
+				<button type="button" class="btn btn-success" ng-click="clearhall()">清空</button>
+				<button type="button" class="btn btn-danger" onclick="closeaddhall()">关闭</button>
+			</div>		
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var add=document.getElementById('add');
+	function addcenima(){
+		console.log('dsd');
+		add.style.display="block";
+	}
+	function closeadd(){
+		console.log('dsd');
+		add.style.display="none";
+	}
+	function slide(){
+		var slide=document.getElementById('slide');
+		slide.style.display="block";
+	}
+	function closeslide(){
+		var slide=document.getElementById('slide');
+		slide.style.display="none";
+	}
+	function addhall(){
+		var addhall=document.getElementById('addhall');
+		addhall.style.display="block";
+	}
+	function closeaddhall(){
+		var addhall=document.getElementById('addhall');
+		addhall.style.display="none";
+	}
+
+	function checkName(){
+		var block = $('#name+span').get(0);
+		if($('#name').val().length == 0)
+		{
+			
+			block.innerHTML = '不能为空';
+			block.style.color = 'red';
+			return false;
+		}
+		block.innerHTML = '√';
+		block.style.color = 'green';
+		return true;
+		
+	}
+
+	function checkTel(){
+		var block = $('#tel+span').get(0);
+		var Reg = /^((0\d{2,3}-\d{7,8})|(1[3584]\d{9}))$/;
+		if (Reg.test($('#tel').val()) == false) 
+		{
+			block.innerHTML = '号码格式错误';
+			block.style.color = 'red';
+			return false;
+		}
+		block.innerHTML = '√';
+		block.style.color = 'green';
+		return true;
+		
+	}
+
+	function checkAddr(){
+		var block = $('#address+span').get(0);
+		if($('#address').val().length == 0)
+		{
+			
+			block.innerHTML = '不能为空';
+			block.style.color = 'red';
+			return false;
+		}
+		block.innerHTML = '√';
+		block.style.color = 'green';
+		return true;
+		
+	}
+
+	function checkTime(){
+		var block = $('#time+span').get(0);
+		var Reg =  /^((\d)|(1\d)|(2[0-4])):[0-5]+[0-9]-((\d)|(1\d)|(2[0-4])):[0-5]+[0-9]$/;
+
+		if (Reg.test($('#time').val()) == false) 
+				{
+					block.innerHTML = '时间格式错误';
+					block.style.color = 'red';
+					return false;
+				}
+				block.innerHTML = '√';
+				block.style.color = 'green';
+				return true;
+	}
+
+	function checkAll(){
+		if(!checkTime()||!checkName()||!checkAddr()||!checkTel()){
+			// alert("数据有误！不能提交！")
+			return false;
+		}
+		else{
+			closeadd();
+			return true;
+		}
+	}
+
+	function checkHallN(){
+		var block = $('#hallname+span').get(0);
+		if($('#hallname').val().length == 0)
+		{
+			
+			block.innerHTML = 'X';
+			block.style.color = 'red';
+			return false;
+		}
+		block.innerHTML = '√';
+		block.style.color = 'green';
+		return true;
+		
+	}
+
+	function checkHallR(){
+		var block = $('#hallrow+span').get(0);
+		var reg = /^[1-9][0-9]$/
+		if(reg.test($('#hallrow').val()) == false)
+		{
+			
+			block.innerHTML = 'X';
+			block.style.color = 'red';
+			return false;
+		}
+		block.innerHTML = '√';
+		block.style.color = 'green';
+		return true;
+		
+	}
+
+	function checkHallC(){
+		var block = $('#hallcol+span').get(0);
+		var reg = /^[1-9][0-9]$/;
+		if(reg.test($('#hallcol').val()) == false)
+		{
+			
+			block.innerHTML = 'X';
+			block.style.color = 'red';
+			return false;
+		}
+		block.innerHTML = '√';
+		block.style.color = 'green';
+		return true;
+		
+	}
+
+	function checkHallA(){
+		if(!checkHallC()||!checkHallR()||!checkHallN()){
+			return false;
+		}
+		else{
+			addhall();
+			return true;
+		}
+	}
+</script>

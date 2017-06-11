@@ -5,6 +5,9 @@
  * common
  * -------------------------------------------------
 */
+html, body{
+    height: 100%;
+}
 .page {
     text-align: left;
    
@@ -23,7 +26,7 @@
 }
 #top_nav ul{
     position: absolute;
-    margin-left: 780px;
+    margin-left: 710px;
 }
 #top_nav a {
     font-size: 16px;
@@ -100,3 +103,44 @@
 
 }
 .nxt-fullscreen {float: right;right: 0}
+
+.movie-content{
+    width: 1000px;
+    min-height:433px;
+    overflow: hidden;
+    margin:30px auto 100px auto;
+    font-size: 16px;
+    /*margin-bottom: -50px;*/
+}
+.table thead th{
+    line-height: 26px;
+    background: #eee;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0088cc;
+
+}
+
+.table tbody tr td{
+    line-height: 35px;
+    text-align: center;
+}
+
+.table tbody tr:hover{
+    color: blue;
+    cursor: pointer;
+}
+.foot{
+    position:relative;
+    width:100%;
+    background-color: #333;
+    color:#eee;
+    text-align: center;
+    font-size: 16px;
+    height: 50px; 
+}
+
+.foot span{
+    line-height: 50px;
+}

@@ -1,12 +1,12 @@
-.left{
+ .left{
 	width:500px;
 	height:300px;
 	float:left;
-	margin-left: 100px;
+	margin-left: 180px;
 	overflow: hidden;
 }
 .left img{
-	width:100%;
+	width:90%;
 	height:300px;
 	border-radius: 10px;
 }

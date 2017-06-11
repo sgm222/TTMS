@@ -1,0 +1,327 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+.front-indicator {
+	position: relative;
+	width: 145px;
+	margin: 5px 32px 15px 32px;
+	background-color: #f6f6f6;	
+	color: #adadad;
+	text-align: center;
+	padding: 3px;
+	margin-left: 10%;
+	border-radius: 5px;
+}
+
+#seat-map{
+	position: relative;
+}
+.wrapper {
+	width: 100%;
+	max-height: 600px;
+	text-align: center;
+	overflow: hidden;
+}
+.container {
+	position: relative;
+	margin-left: 30%;
+	width: 1000px;
+	text-align: left;
+	overflow: hidden;
+	height: 100%;
+}
+
+.booking-details {
+	position: relative;
+	top:-400px;
+	left: 50%;
+	text-align: left;
+	font-size: 12px;
+	height: 401px;
+}
+
+#contentSeat{
+	position: absolute;
+	width:200px;
+	top:50px;
+	height:200px;
+	font-size: 16px;
+}
+
+.totalPrice{
+	position: absolute;
+	width: 200px;
+	top: 300px;
+	height:200px;
+	font-size: 18px;
+}
+
+.booking-details h2 {
+	margin: 25px 0 20px 0;
+	font-size: 17px;
+}
+.booking-details h3 {
+	margin: 5px 5px 0 0;
+	font-size: 14px;
+	left: 70%;
+}
+
+div.select_detail{
+	position: relative;
+	float: left;
+	left: -50px;
+}
+div.seatCharts-cell {
+	position: relative;
+	color: #182C4E;
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+}
+div.seatCharts-seat {
+	color: #FFFFFF;
+	cursor: pointer;	
+}
+div.seatCharts-row {
+	height: 35px;
+}
+div.seatCharts-seat.available {
+	background-color: #B9DEA0;
+
+}
+div.seatCharts-seat.available.first-class {
+ 	background: url(vip.png); 
+	background-color: #3a78c3;
+}
+div.seatCharts-seat.focused {
+	background-color: #76B474;
+}
+div.seatCharts-seat.selected {
+	background-color: #E6CAC4;
+}
+div.seatCharts-seat.unavailable {
+	background-color: #ccc;
+}
+div.seatCharts-container {
+	border-right: 1px dotted #adadad;
+	width: 1000px;
+	padding: 20px;
+	float: left;
+}
+.seatCharts-legendDescription{
+	position: relative;
+	top: 0px;
+	float: left;
+}
+
+.seatCharts-seat.seatCharts-cell .unavailable .first-class{
+	position: relative;
+	top: 100px;
+	float: left;
+	margin-left: 20px;
+}
+ul.seatCharts-legendList {
+	padding-left: 10px;
+	overflow: hidden;
+}
+span.seatCharts-legendDescription {
+	margin-left: 5px;
+	line-height: 30px;
+}
+.checkout-button {
+	display: block;
+	margin: 10px 0;
+	font-size: 14px;
+}
+#selected-seats {
+	max-height: 200px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 170px;
+}
+
+
+/*自定义弹出小窗口的css*/
+
+#mid{
+
+	margin-top: 0px;
+
+	position: absolute;
+
+	z-index: 2;
+
+	width: 100%;
+
+	height: 100%;
+
+	top: 0px;   
+
+	left: 0px;   
+
+	right: 0px;   
+
+	bottom: 0px;   
+
+  	margin: auto; 
+
+   	overflow: hidden;
+
+}
+
+#pop_frame{
+
+	position: absolute;
+
+	z-index: 3;
+
+	height:330px;
+
+	width: 400px;
+
+   	top: 0px;   
+
+   	left: 0px;   
+
+   	right: 0px;   
+
+  	bottom: 0px;   
+
+   	margin: auto; 
+
+   	border-radius: 5px; 
+}
+
+.frame_top{
+
+	height:35px;
+
+	background: rgb(176,224,230); 
+
+	font-size: 16px;
+
+	padding-top: 20px;
+
+}
+
+.frame_top .close span{
+
+	position: relative;
+
+	bottom:13px;
+
+	height: 20px;
+
+	right:20px;
+
+	line-height: 35px;
+
+	font-size: 10px;
+
+}
+
+.frame_top .close span:hover{
+
+	cursor:pointer;
+
+	color: red;
+
+}
+
+.frame_body{
+
+	height: 68%;
+
+	background: #fff;
+
+} 
+
+.frame_body .text{
+
+	position: relative;
+
+	padding-top: 60px;
+
+	font-size: 16px;
+
+	padding-left: 80px;
+
+	font-weight: bold;
+
+	font-family: "微软雅黑";
+
+}
+
+.frame_body .text .pay{
+
+	position: relative;
+
+	margin-bottom: 0px;
+	
+	border-radius: 5px;
+
+	border:1px solid #ccc;
+
+	padding: 5px 15px;
+
+	float: left;
+
+	left: 40px;
+
+	margin-right: 20px;
+}
+
+.frame_body .text .pay a:visited{
+
+	border:1px solid red;
+}
+
+.frame_body .text .other_pay{
+	
+	position: absolute;
+
+	font-size: 10px;
+
+	margin-top: 80px;
+
+	right: 20px;
+
+	float: right;
+}
+
+.bottom{
+
+	height: 40px;
+
+	background: #fff;
+
+} 
+
+.bottom .button{
+
+	position: relative;
+	
+	border-radius: 5px;
+
+	border:1px solid #ccc;
+
+	padding: 5px 15px;
+
+	float: left;
+
+	left: 100px;
+
+	margin-right: 40px;
+
+	bottom: 20px;
+
+	background: rgba(176,224,230,0.5); 
+}
+.payNum{
+
+	position: absolute;
+
+	margin-top: 80px;
+
+	margin-left:60px;
+}

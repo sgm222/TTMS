@@ -1,15 +1,26 @@
 <link rel="stylesheet" type="text/css" href="css/movie.css">
+<div class="header_top">
+			<ul>
+			 	<li><a href="#/index">首页</a></li>
+				<li><a href="#/cenima">全部影院</a></li>
+				<li><a href="#/person">个人中心</a></li>
+				<li><input type="text"><button>搜索</button></li>
+			</ul>
+</div>
 <div class="movie-content">
 		<div class="movie" ng-repeat="m in movie">
 			<div class="movie-img">
-				<img ng-src="img/{{m.url}}" class="cover" />
+				<img ng-src="img/index/{{m.img1}}" class="cover" />
 			</div>
 			<span class="movie-name">{{m.name}}</span>
 			<div class="movie-jieshao">
-			<p><b>片长：</b>{{m.times}}分钟</p>
-			<p><b>上映日期：</b>{{m.date}}</p>
-			<p><b>影片简介：</b>{{m.direction}}</p>
+				<p><b>片长：</b>{{m.times}}分钟</p>
+				<p><b>上映日期：</b>{{m.date}}</p>
+				<p><b>影片简介：</b>{{m.direction}}</p>
 			</div>
-			<button type="button" class="btn btn-danger btn-xs" style="margin-left:600px;margin-top:-100px" ng-click="">立即购票</button>
+			<button type="button" class="btn btn-danger btn-xs" style="margin-left:830px;margin-top:-180px" ng-click="turnto(m.id)">电影详情</button>
 		</div>
+</div>
+<div class="foot">
+		<span>西安邮电大学西柚影院版权所有 © 2017 XiyouCinma</span>
 </div>

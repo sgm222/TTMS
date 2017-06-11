@@ -39,3 +39,6 @@ class Slider{
 
 let slider=new Slider('list');
 setInterval(slider.slideNext.bind(slider),3000);
+window.onload=function(){
+    console.log('aaa');
+}

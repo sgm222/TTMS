@@ -128,6 +128,8 @@
 	padding: 10px 10px;
 	position: absolute;
 	z-index: 1;
+	height:210px;
+	overflow: hidden;
 	transition: all 1s;
 }
 .jieshao p{
@@ -192,18 +194,7 @@
 	text-decoration: none;;
 	color:red;
 }
-.foot{
-	position: relative;
-	width:100%;
-	height:50px;
-	background-color: #333;
-	color:#eee;
-	text-align: center;
-	font-size: 16px;
-}
-.foot span{
-	line-height: 50px;
-}
+
 .last{
 	margin-top: 20px;
 	width: 100%;

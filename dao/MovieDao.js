@@ -4,7 +4,7 @@
  */
 
 var DaoBase = require('./DaoBase'),
-    movies = require('./../models').Movies;
-var MovieDao = new DaoBase(movies);
+    MoviesModel = require('./../models').Movies;
+var MovieDao = new DaoBase(MoviesModel);
 
 module.exports = MovieDao;

@@ -1,0 +1,46 @@
+<link rel="stylesheet" type="text/css" href="css/adminticket.css">
+<hr>
+<div class="row clearfix">
+	<div class="col-md-12 row">
+		<table class="table">
+			<thead>
+				<tr>
+					<th class = "small">编号</th>
+					<th class = "small">出票时间</th>
+					<th class = "small">会员名</th>
+					<th class = "big">影院</th>
+					<th class = "small">影厅</th>
+					<th class = "big">电影</th>
+					<th class = "small">票价</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="t in ticket">
+					
+					<td class = "small">
+						{{t.ticket_id}}
+					</td>
+					<td class = "big">
+						{{t.time}}
+					</td>
+					<td class = "small">
+						{{t.user_name}}
+					</td>
+					<td class = "big">
+						{{t.cenima_name}}
+					</td>
+					<td class = "small">
+						{{t.hall_name}}
+					</td>
+					<td class = "big">
+						{{t.movie_name}}
+					</td>
+					<td class = "small">
+						{{t.movie_price}}
+					</td>
+					
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

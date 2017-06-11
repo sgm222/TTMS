@@ -1,0 +1,84 @@
+<link rel="stylesheet" type="text/css" href="css/moviedirection.css">
+<div class="header_top">
+			<ul>
+			 	<li><a href="#/">首页</a></li>
+				<li><a href="#/movie">全部电影</a></li>
+				<li><a href="#/person">个人中心</a></li>
+				<li><input type="text"><button>搜索</button></li>
+			</ul> 
+</div>
+<div class="movie-content">
+		<div class="movie">
+			<div class="movie-img">
+				<img ng-src="img/index/{{movie.img1}}" class="cover" />
+			</div>
+			<span class="movie-name" ng-bind="movie.name">{{movie.name}}</span>
+			<div class="movie-jieshao">
+				<p><b>导演：</b>{{movie.director}}</p>
+				<p><b>主演：</b>{{movie.actor}}</p>
+				<p><b>剧情简介：</b>{{movie.directions}}</p>
+			</div>  
+ 
+			<div class="movie-slider" id="movie-slider" onmouseover="stop()">
+				<ul>
+					<li><img ng-src="img/index/{{movie.img2}}"></li>
+					<li><img ng-src="img/index/{{movie.img3}}"></li>
+					<li><img ng-src="img/index/{{movie.img4}}"></li>
+					<li><img ng-src="img/index/{{movie.img5}}"></li>
+					<li><img ng-src="img/index/{{movie.img6}}"></li>
+					<li><img ng-src="img/index/{{movie.img2}}"></li>
+					<li><img ng-src="img/index/{{movie.img3}}"></li>
+					<li><img ng-src="img/index/{{movie.img4}}"></li>
+					
+				</ul>
+			</div>
+		</div> 
+		<div class="cenima"> 
+			<table class="table">
+						<thead>
+							<tr>
+								<th>
+									影院
+								</th>
+								<th>
+									影厅
+								</th>
+								<th>
+									 开始时间
+								</th>
+								<th>
+									结束时间
+								</th>
+								<th>
+									价格
+								</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="p in play">
+								<td>
+									{{p.cenima_name}}
+								</td>
+								<td>
+									{{p.hall_name}}
+								</td>
+								<td>
+									{{p.movie_start}}
+								</td>
+								<td>
+									{{p.movie_end}}
+								</td>
+								<td>
+									<button type="button" class="btn btn-primary btn-xs"  ng-click="turnto(p.cenima_id,p.hall_id,p.movie_price,p.movie_id)">立即购票</button>
+								</td>
+									
+							</tr>
+						</tbody>
+					</table>
+		</div>
+</div>
+<div class="foot">
+		<span>西安邮电大学西柚影院版权所有 © 2017 XiyouCinma</span>
+</div>
+<script type="text/javascript" src="../js/moviedirection.js"></script>

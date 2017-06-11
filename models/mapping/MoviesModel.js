@@ -8,10 +8,21 @@ var mongoose = require('mongoose'),
 var schema = new Schema({
 	id:Number,
     name:String,
-    url:String,
+	img1:String,
+	img2:String,
+    img3:String,
+    img4:String,
+    img5:String,
+    img6:String,
     date:String,
     times:Number,
-    direction:String
+    price:Number,
+    director:String,
+    actor:String,
+    direction:String,
+    directions:String
+},{
+  versionKey: false
 });
 
 mongoose.model('Movies', schema);

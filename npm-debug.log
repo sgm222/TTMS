@@ -1,0 +1,781 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData mongoose
+20 silly mapToRegistry name mongoose
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'mongoose',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'mongoose',
+23 silly mapToRegistry   name: 'mongoose',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/mongoose
+25 silly fetchNamedPackageData colors
+26 silly mapToRegistry name colors
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'colors',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   escapedName: 'colors',
+29 silly mapToRegistry   name: 'colors',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri https://registry.npmjs.org/colors
+31 silly fetchNamedPackageData mongodb
+32 silly mapToRegistry name mongodb
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry data Result {
+35 silly mapToRegistry   raw: 'mongodb',
+35 silly mapToRegistry   scope: null,
+35 silly mapToRegistry   escapedName: 'mongodb',
+35 silly mapToRegistry   name: 'mongodb',
+35 silly mapToRegistry   rawSpec: '',
+35 silly mapToRegistry   spec: 'latest',
+35 silly mapToRegistry   type: 'tag' }
+36 silly mapToRegistry uri https://registry.npmjs.org/mongodb
+37 silly fetchNamedPackageData connect-mongo
+38 silly mapToRegistry name connect-mongo
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry data Result {
+41 silly mapToRegistry   raw: 'connect-mongo',
+41 silly mapToRegistry   scope: null,
+41 silly mapToRegistry   escapedName: 'connect-mongo',
+41 silly mapToRegistry   name: 'connect-mongo',
+41 silly mapToRegistry   rawSpec: '',
+41 silly mapToRegistry   spec: 'latest',
+41 silly mapToRegistry   type: 'tag' }
+42 silly mapToRegistry uri https://registry.npmjs.org/connect-mongo
+43 silly fetchNamedPackageData connect-flash
+44 silly mapToRegistry name connect-flash
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry data Result {
+47 silly mapToRegistry   raw: 'connect-flash',
+47 silly mapToRegistry   scope: null,
+47 silly mapToRegistry   escapedName: 'connect-flash',
+47 silly mapToRegistry   name: 'connect-flash',
+47 silly mapToRegistry   rawSpec: '',
+47 silly mapToRegistry   spec: 'latest',
+47 silly mapToRegistry   type: 'tag' }
+48 silly mapToRegistry uri https://registry.npmjs.org/connect-flash
+49 silly fetchNamedPackageData requirejs
+50 silly mapToRegistry name requirejs
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry data Result {
+53 silly mapToRegistry   raw: 'requirejs',
+53 silly mapToRegistry   scope: null,
+53 silly mapToRegistry   escapedName: 'requirejs',
+53 silly mapToRegistry   name: 'requirejs',
+53 silly mapToRegistry   rawSpec: '',
+53 silly mapToRegistry   spec: 'latest',
+53 silly mapToRegistry   type: 'tag' }
+54 silly mapToRegistry uri https://registry.npmjs.org/requirejs
+55 silly fetchNamedPackageData node-localstroage
+56 silly mapToRegistry name node-localstroage
+57 silly mapToRegistry using default registry
+58 silly mapToRegistry registry https://registry.npmjs.org/
+59 silly mapToRegistry data Result {
+59 silly mapToRegistry   raw: 'node-localstroage',
+59 silly mapToRegistry   scope: null,
+59 silly mapToRegistry   escapedName: 'node-localstroage',
+59 silly mapToRegistry   name: 'node-localstroage',
+59 silly mapToRegistry   rawSpec: '',
+59 silly mapToRegistry   spec: 'latest',
+59 silly mapToRegistry   type: 'tag' }
+60 silly mapToRegistry uri https://registry.npmjs.org/node-localstroage
+61 verbose request uri https://registry.npmjs.org/connect-mongo
+62 verbose request no auth needed
+63 info attempt registry request try #1 at 21:59:23
+64 verbose request id 5a2f7dee39bf488e
+65 http request GET https://registry.npmjs.org/connect-mongo
+66 verbose request uri https://registry.npmjs.org/connect-flash
+67 verbose request no auth needed
+68 info attempt registry request try #1 at 21:59:23
+69 http request GET https://registry.npmjs.org/connect-flash
+70 verbose request uri https://registry.npmjs.org/requirejs
+71 verbose request no auth needed
+72 info attempt registry request try #1 at 21:59:23
+73 http request GET https://registry.npmjs.org/requirejs
+74 verbose request uri https://registry.npmjs.org/node-localstroage
+75 verbose request no auth needed
+76 info attempt registry request try #1 at 21:59:23
+77 http request GET https://registry.npmjs.org/node-localstroage
+78 verbose request uri https://registry.npmjs.org/colors
+79 verbose request no auth needed
+80 info attempt registry request try #1 at 21:59:23
+81 verbose etag W/"5900b12e-5930"
+82 verbose lastModified Wed, 26 Apr 2017 14:39:42 GMT
+83 http request GET https://registry.npmjs.org/colors
+84 verbose request uri https://registry.npmjs.org/mongodb
+85 verbose request no auth needed
+86 info attempt registry request try #1 at 21:59:23
+87 verbose etag W/"59101e70-968fb"
+88 verbose lastModified Mon, 08 May 2017 07:29:52 GMT
+89 http request GET https://registry.npmjs.org/mongodb
+90 verbose request uri https://registry.npmjs.org/mongoose
+91 verbose request no auth needed
+92 info attempt registry request try #1 at 21:59:23
+93 verbose etag W/"59069c6e-9182d"
+94 verbose lastModified Mon, 01 May 2017 02:24:46 GMT
+95 http request GET https://registry.npmjs.org/mongoose
+96 http 200 https://registry.npmjs.org/requirejs
+97 verbose headers { server: 'nginx/1.10.1',
+97 verbose headers   'content-type': 'application/json',
+97 verbose headers   'last-modified': 'Tue, 21 Mar 2017 14:23:08 GMT',
+97 verbose headers   etag: 'W/"58d1374c-c2f0"',
+97 verbose headers   'content-encoding': 'gzip',
+97 verbose headers   'cache-control': 'max-age=300',
+97 verbose headers   'content-length': '4740',
+97 verbose headers   'accept-ranges': 'bytes',
+97 verbose headers   date: 'Tue, 23 May 2017 13:59:18 GMT',
+97 verbose headers   via: '1.1 varnish',
+97 verbose headers   age: '48',
+97 verbose headers   connection: 'keep-alive',
+97 verbose headers   'x-served-by': 'cache-nrt6134-NRT',
+97 verbose headers   'x-cache': 'HIT',
+97 verbose headers   'x-cache-hits': '1',
+97 verbose headers   'x-timer': 'S1495547959.874253,VS0,VE1',
+97 verbose headers   vary: 'Accept-Encoding' }
+98 silly get cb [ 200,
+98 silly get   { server: 'nginx/1.10.1',
+98 silly get     'content-type': 'application/json',
+98 silly get     'last-modified': 'Tue, 21 Mar 2017 14:23:08 GMT',
+98 silly get     etag: 'W/"58d1374c-c2f0"',
+98 silly get     'content-encoding': 'gzip',
+98 silly get     'cache-control': 'max-age=300',
+98 silly get     'content-length': '4740',
+98 silly get     'accept-ranges': 'bytes',
+98 silly get     date: 'Tue, 23 May 2017 13:59:18 GMT',
+98 silly get     via: '1.1 varnish',
+98 silly get     age: '48',
+98 silly get     connection: 'keep-alive',
+98 silly get     'x-served-by': 'cache-nrt6134-NRT',
+98 silly get     'x-cache': 'HIT',
+98 silly get     'x-cache-hits': '1',
+98 silly get     'x-timer': 'S1495547959.874253,VS0,VE1',
+98 silly get     vary: 'Accept-Encoding' } ]
+99 verbose get saving requirejs to C:\Users\lenovo\AppData\Roaming\npm-cache\registry.npmjs.org\requirejs\.cache.json
+100 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+101 silly resolveWithNewModule requirejs@2.3.3 checking installable status
+102 silly cache add args [ 'requirejs@latest', null ]
+103 verbose cache add spec requirejs@latest
+104 silly cache add parsed spec Result {
+104 silly cache add   raw: 'requirejs@latest',
+104 silly cache add   scope: null,
+104 silly cache add   escapedName: 'requirejs',
+104 silly cache add   name: 'requirejs',
+104 silly cache add   rawSpec: 'latest',
+104 silly cache add   spec: 'latest',
+104 silly cache add   type: 'tag' }
+105 silly addNamed requirejs@latest
+106 verbose addNamed "latest" is being treated as a dist-tag for requirejs
+107 info addNameTag [ 'requirejs', 'latest' ]
+108 silly mapToRegistry name requirejs
+109 silly mapToRegistry using default registry
+110 silly mapToRegistry registry https://registry.npmjs.org/
+111 silly mapToRegistry data Result {
+111 silly mapToRegistry   raw: 'requirejs',
+111 silly mapToRegistry   scope: null,
+111 silly mapToRegistry   escapedName: 'requirejs',
+111 silly mapToRegistry   name: 'requirejs',
+111 silly mapToRegistry   rawSpec: '',
+111 silly mapToRegistry   spec: 'latest',
+111 silly mapToRegistry   type: 'tag' }
+112 silly mapToRegistry uri https://registry.npmjs.org/requirejs
+113 verbose addNameTag registry:https://registry.npmjs.org/requirejs not in flight; fetching
+114 verbose get https://registry.npmjs.org/requirejs not expired, no request
+115 silly addNameTag next cb for requirejs with tag latest
+116 silly addNamed requirejs@2.3.3
+117 verbose addNamed "2.3.3" is a plain semver version for requirejs
+118 silly mapToRegistry name requirejs
+119 silly mapToRegistry using default registry
+120 silly mapToRegistry registry https://registry.npmjs.org/
+121 silly mapToRegistry data Result {
+121 silly mapToRegistry   raw: 'requirejs',
+121 silly mapToRegistry   scope: null,
+121 silly mapToRegistry   escapedName: 'requirejs',
+121 silly mapToRegistry   name: 'requirejs',
+121 silly mapToRegistry   rawSpec: '',
+121 silly mapToRegistry   spec: 'latest',
+121 silly mapToRegistry   type: 'tag' }
+122 silly mapToRegistry uri https://registry.npmjs.org/requirejs
+123 verbose addRemoteTarball https://registry.npmjs.org/requirejs/-/requirejs-2.3.3.tgz not in flight; adding
+124 verbose addRemoteTarball [ 'https://registry.npmjs.org/requirejs/-/requirejs-2.3.3.tgz',
+124 verbose addRemoteTarball   'aa59fd3a0287eaf407959a138228044b5dd6a6a3' ]
+125 http 200 https://registry.npmjs.org/colors
+126 verbose headers { server: 'nginx/1.10.3',
+126 verbose headers   'content-type': 'application/json',
+126 verbose headers   'last-modified': 'Sun, 21 May 2017 00:08:49 GMT',
+126 verbose headers   etag: 'W/"5920da91-59a4"',
+126 verbose headers   'content-encoding': 'gzip',
+126 verbose headers   'cache-control': 'max-age=300',
+126 verbose headers   'content-length': '6111',
+126 verbose headers   'accept-ranges': 'bytes',
+126 verbose headers   date: 'Tue, 23 May 2017 13:59:18 GMT',
+126 verbose headers   via: '1.1 varnish',
+126 verbose headers   age: '63',
+126 verbose headers   connection: 'keep-alive',
+126 verbose headers   'x-served-by': 'cache-nrt6129-NRT',
+126 verbose headers   'x-cache': 'HIT',
+126 verbose headers   'x-cache-hits': '1',
+126 verbose headers   'x-timer': 'S1495547959.960904,VS0,VE1',
+126 verbose headers   vary: 'Accept-Encoding' }
+127 silly get cb [ 200,
+127 silly get   { server: 'nginx/1.10.3',
+127 silly get     'content-type': 'application/json',
+127 silly get     'last-modified': 'Sun, 21 May 2017 00:08:49 GMT',
+127 silly get     etag: 'W/"5920da91-59a4"',
+127 silly get     'content-encoding': 'gzip',
+127 silly get     'cache-control': 'max-age=300',
+127 silly get     'content-length': '6111',
+127 silly get     'accept-ranges': 'bytes',
+127 silly get     date: 'Tue, 23 May 2017 13:59:18 GMT',
+127 silly get     via: '1.1 varnish',
+127 silly get     age: '63',
+127 silly get     connection: 'keep-alive',
+127 silly get     'x-served-by': 'cache-nrt6129-NRT',
+127 silly get     'x-cache': 'HIT',
+127 silly get     'x-cache-hits': '1',
+127 silly get     'x-timer': 'S1495547959.960904,VS0,VE1',
+127 silly get     vary: 'Accept-Encoding' } ]
+128 verbose get saving colors to C:\Users\lenovo\AppData\Roaming\npm-cache\registry.npmjs.org\colors\.cache.json
+129 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+130 info retry fetch attempt 1 at 21:59:24
+131 info attempt registry request try #1 at 21:59:24
+132 http fetch GET https://registry.npmjs.org/requirejs/-/requirejs-2.3.3.tgz
+133 silly resolveWithNewModule colors@1.1.2 checking installable status
+134 silly cache add args [ 'colors@latest', null ]
+135 verbose cache add spec colors@latest
+136 silly cache add parsed spec Result {
+136 silly cache add   raw: 'colors@latest',
+136 silly cache add   scope: null,
+136 silly cache add   escapedName: 'colors',
+136 silly cache add   name: 'colors',
+136 silly cache add   rawSpec: 'latest',
+136 silly cache add   spec: 'latest',
+136 silly cache add   type: 'tag' }
+137 silly addNamed colors@latest
+138 verbose addNamed "latest" is being treated as a dist-tag for colors
+139 info addNameTag [ 'colors', 'latest' ]
+140 silly mapToRegistry name colors
+141 silly mapToRegistry using default registry
+142 silly mapToRegistry registry https://registry.npmjs.org/
+143 silly mapToRegistry data Result {
+143 silly mapToRegistry   raw: 'colors',
+143 silly mapToRegistry   scope: null,
+143 silly mapToRegistry   escapedName: 'colors',
+143 silly mapToRegistry   name: 'colors',
+143 silly mapToRegistry   rawSpec: '',
+143 silly mapToRegistry   spec: 'latest',
+143 silly mapToRegistry   type: 'tag' }
+144 silly mapToRegistry uri https://registry.npmjs.org/colors
+145 verbose addNameTag registry:https://registry.npmjs.org/colors not in flight; fetching
+146 verbose get https://registry.npmjs.org/colors not expired, no request
+147 silly addNameTag next cb for colors with tag latest
+148 silly addNamed colors@1.1.2
+149 verbose addNamed "1.1.2" is a plain semver version for colors
+150 silly cache afterAdd colors@1.1.2
+151 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\colors\1.1.2\package\package.json not in flight; writing
+152 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+153 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\colors\1.1.2\package\package.json written
+154 http 200 https://registry.npmjs.org/mongodb
+155 verbose headers { server: 'nginx/1.10.3',
+155 verbose headers   'content-type': 'application/json',
+155 verbose headers   'last-modified': 'Tue, 23 May 2017 03:18:07 GMT',
+155 verbose headers   etag: 'W/"5923a9ef-97127"',
+155 verbose headers   'content-encoding': 'gzip',
+155 verbose headers   'cache-control': 'max-age=300',
+155 verbose headers   'content-length': '35551',
+155 verbose headers   'accept-ranges': 'bytes',
+155 verbose headers   date: 'Tue, 23 May 2017 13:59:18 GMT',
+155 verbose headers   via: '1.1 varnish',
+155 verbose headers   age: '174',
+155 verbose headers   connection: 'keep-alive',
+155 verbose headers   'x-served-by': 'cache-nrt6126-NRT',
+155 verbose headers   'x-cache': 'HIT',
+155 verbose headers   'x-cache-hits': '1',
+155 verbose headers   'x-timer': 'S1495547959.939030,VS0,VE0',
+155 verbose headers   vary: 'Accept-Encoding' }
+156 silly get cb [ 200,
+156 silly get   { server: 'nginx/1.10.3',
+156 silly get     'content-type': 'application/json',
+156 silly get     'last-modified': 'Tue, 23 May 2017 03:18:07 GMT',
+156 silly get     etag: 'W/"5923a9ef-97127"',
+156 silly get     'content-encoding': 'gzip',
+156 silly get     'cache-control': 'max-age=300',
+156 silly get     'content-length': '35551',
+156 silly get     'accept-ranges': 'bytes',
+156 silly get     date: 'Tue, 23 May 2017 13:59:18 GMT',
+156 silly get     via: '1.1 varnish',
+156 silly get     age: '174',
+156 silly get     connection: 'keep-alive',
+156 silly get     'x-served-by': 'cache-nrt6126-NRT',
+156 silly get     'x-cache': 'HIT',
+156 silly get     'x-cache-hits': '1',
+156 silly get     'x-timer': 'S1495547959.939030,VS0,VE0',
+156 silly get     vary: 'Accept-Encoding' } ]
+157 verbose get saving mongodb to C:\Users\lenovo\AppData\Roaming\npm-cache\registry.npmjs.org\mongodb\.cache.json
+158 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+159 http fetch 200 https://registry.npmjs.org/requirejs/-/requirejs-2.3.3.tgz
+160 silly resolveWithNewModule mongodb@2.2.27 checking installable status
+161 silly cache add args [ 'mongodb@latest', null ]
+162 verbose cache add spec mongodb@latest
+163 silly cache add parsed spec Result {
+163 silly cache add   raw: 'mongodb@latest',
+163 silly cache add   scope: null,
+163 silly cache add   escapedName: 'mongodb',
+163 silly cache add   name: 'mongodb',
+163 silly cache add   rawSpec: 'latest',
+163 silly cache add   spec: 'latest',
+163 silly cache add   type: 'tag' }
+164 silly addNamed mongodb@latest
+165 verbose addNamed "latest" is being treated as a dist-tag for mongodb
+166 info addNameTag [ 'mongodb', 'latest' ]
+167 silly mapToRegistry name mongodb
+168 silly mapToRegistry using default registry
+169 silly mapToRegistry registry https://registry.npmjs.org/
+170 silly mapToRegistry data Result {
+170 silly mapToRegistry   raw: 'mongodb',
+170 silly mapToRegistry   scope: null,
+170 silly mapToRegistry   escapedName: 'mongodb',
+170 silly mapToRegistry   name: 'mongodb',
+170 silly mapToRegistry   rawSpec: '',
+170 silly mapToRegistry   spec: 'latest',
+170 silly mapToRegistry   type: 'tag' }
+171 silly mapToRegistry uri https://registry.npmjs.org/mongodb
+172 verbose addNameTag registry:https://registry.npmjs.org/mongodb not in flight; fetching
+173 verbose get https://registry.npmjs.org/mongodb not expired, no request
+174 silly addNameTag next cb for mongodb with tag latest
+175 silly addNamed mongodb@2.2.27
+176 verbose addNamed "2.2.27" is a plain semver version for mongodb
+177 silly mapToRegistry name mongodb
+178 silly mapToRegistry using default registry
+179 silly mapToRegistry registry https://registry.npmjs.org/
+180 silly mapToRegistry data Result {
+180 silly mapToRegistry   raw: 'mongodb',
+180 silly mapToRegistry   scope: null,
+180 silly mapToRegistry   escapedName: 'mongodb',
+180 silly mapToRegistry   name: 'mongodb',
+180 silly mapToRegistry   rawSpec: '',
+180 silly mapToRegistry   spec: 'latest',
+180 silly mapToRegistry   type: 'tag' }
+181 silly mapToRegistry uri https://registry.npmjs.org/mongodb
+182 verbose addRemoteTarball https://registry.npmjs.org/mongodb/-/mongodb-2.2.27.tgz not in flight; adding
+183 verbose addRemoteTarball [ 'https://registry.npmjs.org/mongodb/-/mongodb-2.2.27.tgz',
+183 verbose addRemoteTarball   '34122034db66d983bcf6ab5adb26a24a70fef6e6' ]
+184 info retry fetch attempt 1 at 21:59:24
+185 info attempt registry request try #1 at 21:59:24
+186 http fetch GET https://registry.npmjs.org/mongodb/-/mongodb-2.2.27.tgz
+187 http fetch 200 https://registry.npmjs.org/mongodb/-/mongodb-2.2.27.tgz
+188 http 200 https://registry.npmjs.org/connect-flash
+189 verbose headers { server: 'nginx/1.10.3',
+189 verbose headers   'content-type': 'application/json',
+189 verbose headers   'last-modified': 'Fri, 19 May 2017 09:12:31 GMT',
+189 verbose headers   etag: 'W/"591eb6ff-18ea"',
+189 verbose headers   'content-encoding': 'gzip',
+189 verbose headers   'cache-control': 'max-age=300',
+189 verbose headers   'content-length': '2326',
+189 verbose headers   'accept-ranges': 'bytes',
+189 verbose headers   date: 'Tue, 23 May 2017 13:59:19 GMT',
+189 verbose headers   via: '1.1 varnish',
+189 verbose headers   age: '184',
+189 verbose headers   connection: 'keep-alive',
+189 verbose headers   'x-served-by': 'cache-nrt6130-NRT',
+189 verbose headers   'x-cache': 'HIT',
+189 verbose headers   'x-cache-hits': '1',
+189 verbose headers   'x-timer': 'S1495547960.867875,VS0,VE0',
+189 verbose headers   vary: 'Accept-Encoding' }
+190 silly get cb [ 200,
+190 silly get   { server: 'nginx/1.10.3',
+190 silly get     'content-type': 'application/json',
+190 silly get     'last-modified': 'Fri, 19 May 2017 09:12:31 GMT',
+190 silly get     etag: 'W/"591eb6ff-18ea"',
+190 silly get     'content-encoding': 'gzip',
+190 silly get     'cache-control': 'max-age=300',
+190 silly get     'content-length': '2326',
+190 silly get     'accept-ranges': 'bytes',
+190 silly get     date: 'Tue, 23 May 2017 13:59:19 GMT',
+190 silly get     via: '1.1 varnish',
+190 silly get     age: '184',
+190 silly get     connection: 'keep-alive',
+190 silly get     'x-served-by': 'cache-nrt6130-NRT',
+190 silly get     'x-cache': 'HIT',
+190 silly get     'x-cache-hits': '1',
+190 silly get     'x-timer': 'S1495547960.867875,VS0,VE0',
+190 silly get     vary: 'Accept-Encoding' } ]
+191 verbose get saving connect-flash to C:\Users\lenovo\AppData\Roaming\npm-cache\registry.npmjs.org\connect-flash\.cache.json
+192 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+193 silly resolveWithNewModule connect-flash@0.1.1 checking installable status
+194 silly cache add args [ 'connect-flash@latest', null ]
+195 verbose cache add spec connect-flash@latest
+196 silly cache add parsed spec Result {
+196 silly cache add   raw: 'connect-flash@latest',
+196 silly cache add   scope: null,
+196 silly cache add   escapedName: 'connect-flash',
+196 silly cache add   name: 'connect-flash',
+196 silly cache add   rawSpec: 'latest',
+196 silly cache add   spec: 'latest',
+196 silly cache add   type: 'tag' }
+197 silly addNamed connect-flash@latest
+198 verbose addNamed "latest" is being treated as a dist-tag for connect-flash
+199 info addNameTag [ 'connect-flash', 'latest' ]
+200 silly mapToRegistry name connect-flash
+201 silly mapToRegistry using default registry
+202 silly mapToRegistry registry https://registry.npmjs.org/
+203 silly mapToRegistry data Result {
+203 silly mapToRegistry   raw: 'connect-flash',
+203 silly mapToRegistry   scope: null,
+203 silly mapToRegistry   escapedName: 'connect-flash',
+203 silly mapToRegistry   name: 'connect-flash',
+203 silly mapToRegistry   rawSpec: '',
+203 silly mapToRegistry   spec: 'latest',
+203 silly mapToRegistry   type: 'tag' }
+204 silly mapToRegistry uri https://registry.npmjs.org/connect-flash
+205 verbose addNameTag registry:https://registry.npmjs.org/connect-flash not in flight; fetching
+206 verbose get https://registry.npmjs.org/connect-flash not expired, no request
+207 silly addNameTag next cb for connect-flash with tag latest
+208 silly addNamed connect-flash@0.1.1
+209 verbose addNamed "0.1.1" is a plain semver version for connect-flash
+210 silly mapToRegistry name connect-flash
+211 silly mapToRegistry using default registry
+212 silly mapToRegistry registry https://registry.npmjs.org/
+213 silly mapToRegistry data Result {
+213 silly mapToRegistry   raw: 'connect-flash',
+213 silly mapToRegistry   scope: null,
+213 silly mapToRegistry   escapedName: 'connect-flash',
+213 silly mapToRegistry   name: 'connect-flash',
+213 silly mapToRegistry   rawSpec: '',
+213 silly mapToRegistry   spec: 'latest',
+213 silly mapToRegistry   type: 'tag' }
+214 silly mapToRegistry uri https://registry.npmjs.org/connect-flash
+215 verbose addRemoteTarball https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz not in flight; adding
+216 verbose addRemoteTarball [ 'https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz',
+216 verbose addRemoteTarball   'd8630f26d95a7f851f9956b1e8cc6732f3b6aa30' ]
+217 info retry fetch attempt 1 at 21:59:25
+218 info attempt registry request try #1 at 21:59:25
+219 http fetch GET https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz
+220 http 200 https://registry.npmjs.org/connect-mongo
+221 verbose headers { server: 'nginx/1.10.1',
+221 verbose headers   'content-type': 'application/json',
+221 verbose headers   'last-modified': 'Mon, 15 May 2017 07:38:25 GMT',
+221 verbose headers   etag: 'W/"59195af1-de91"',
+221 verbose headers   'content-encoding': 'gzip',
+221 verbose headers   'cache-control': 'max-age=300',
+221 verbose headers   'content-length': '8489',
+221 verbose headers   'accept-ranges': 'bytes',
+221 verbose headers   date: 'Tue, 23 May 2017 13:59:19 GMT',
+221 verbose headers   via: '1.1 varnish',
+221 verbose headers   age: '0',
+221 verbose headers   connection: 'keep-alive',
+221 verbose headers   'x-served-by': 'cache-nrt6121-NRT',
+221 verbose headers   'x-cache': 'HIT',
+221 verbose headers   'x-cache-hits': '1',
+221 verbose headers   'x-timer': 'S1495547960.814991,VS0,VE127',
+221 verbose headers   vary: 'Accept-Encoding' }
+222 silly get cb [ 200,
+222 silly get   { server: 'nginx/1.10.1',
+222 silly get     'content-type': 'application/json',
+222 silly get     'last-modified': 'Mon, 15 May 2017 07:38:25 GMT',
+222 silly get     etag: 'W/"59195af1-de91"',
+222 silly get     'content-encoding': 'gzip',
+222 silly get     'cache-control': 'max-age=300',
+222 silly get     'content-length': '8489',
+222 silly get     'accept-ranges': 'bytes',
+222 silly get     date: 'Tue, 23 May 2017 13:59:19 GMT',
+222 silly get     via: '1.1 varnish',
+222 silly get     age: '0',
+222 silly get     connection: 'keep-alive',
+222 silly get     'x-served-by': 'cache-nrt6121-NRT',
+222 silly get     'x-cache': 'HIT',
+222 silly get     'x-cache-hits': '1',
+222 silly get     'x-timer': 'S1495547960.814991,VS0,VE127',
+222 silly get     vary: 'Accept-Encoding' } ]
+223 verbose get saving connect-mongo to C:\Users\lenovo\AppData\Roaming\npm-cache\registry.npmjs.org\connect-mongo\.cache.json
+224 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+225 silly resolveWithNewModule connect-mongo@1.3.2 checking installable status
+226 silly cache add args [ 'connect-mongo@latest', null ]
+227 verbose cache add spec connect-mongo@latest
+228 silly cache add parsed spec Result {
+228 silly cache add   raw: 'connect-mongo@latest',
+228 silly cache add   scope: null,
+228 silly cache add   escapedName: 'connect-mongo',
+228 silly cache add   name: 'connect-mongo',
+228 silly cache add   rawSpec: 'latest',
+228 silly cache add   spec: 'latest',
+228 silly cache add   type: 'tag' }
+229 silly addNamed connect-mongo@latest
+230 verbose addNamed "latest" is being treated as a dist-tag for connect-mongo
+231 info addNameTag [ 'connect-mongo', 'latest' ]
+232 silly mapToRegistry name connect-mongo
+233 silly mapToRegistry using default registry
+234 silly mapToRegistry registry https://registry.npmjs.org/
+235 silly mapToRegistry data Result {
+235 silly mapToRegistry   raw: 'connect-mongo',
+235 silly mapToRegistry   scope: null,
+235 silly mapToRegistry   escapedName: 'connect-mongo',
+235 silly mapToRegistry   name: 'connect-mongo',
+235 silly mapToRegistry   rawSpec: '',
+235 silly mapToRegistry   spec: 'latest',
+235 silly mapToRegistry   type: 'tag' }
+236 silly mapToRegistry uri https://registry.npmjs.org/connect-mongo
+237 verbose addNameTag registry:https://registry.npmjs.org/connect-mongo not in flight; fetching
+238 verbose get https://registry.npmjs.org/connect-mongo not expired, no request
+239 silly addNameTag next cb for connect-mongo with tag latest
+240 silly addNamed connect-mongo@1.3.2
+241 verbose addNamed "1.3.2" is a plain semver version for connect-mongo
+242 silly mapToRegistry name connect-mongo
+243 silly mapToRegistry using default registry
+244 silly mapToRegistry registry https://registry.npmjs.org/
+245 silly mapToRegistry data Result {
+245 silly mapToRegistry   raw: 'connect-mongo',
+245 silly mapToRegistry   scope: null,
+245 silly mapToRegistry   escapedName: 'connect-mongo',
+245 silly mapToRegistry   name: 'connect-mongo',
+245 silly mapToRegistry   rawSpec: '',
+245 silly mapToRegistry   spec: 'latest',
+245 silly mapToRegistry   type: 'tag' }
+246 silly mapToRegistry uri https://registry.npmjs.org/connect-mongo
+247 verbose addRemoteTarball https://registry.npmjs.org/connect-mongo/-/connect-mongo-1.3.2.tgz not in flight; adding
+248 verbose addRemoteTarball [ 'https://registry.npmjs.org/connect-mongo/-/connect-mongo-1.3.2.tgz',
+248 verbose addRemoteTarball   '7cbf58dfff26760e5e00e017d0a85b4bc90b9d37' ]
+249 http 200 https://registry.npmjs.org/mongoose
+250 verbose headers { server: 'nginx/1.10.1',
+250 verbose headers   'content-type': 'application/json',
+250 verbose headers   'last-modified': 'Tue, 23 May 2017 05:12:21 GMT',
+250 verbose headers   etag: 'W/"5923c4b5-95479"',
+250 verbose headers   'content-encoding': 'gzip',
+250 verbose headers   'cache-control': 'max-age=300',
+250 verbose headers   'content-length': '44986',
+250 verbose headers   'accept-ranges': 'bytes',
+250 verbose headers   date: 'Tue, 23 May 2017 13:59:19 GMT',
+250 verbose headers   via: '1.1 varnish',
+250 verbose headers   age: '77',
+250 verbose headers   connection: 'keep-alive',
+250 verbose headers   'x-served-by': 'cache-nrt6124-NRT',
+250 verbose headers   'x-cache': 'HIT',
+250 verbose headers   'x-cache-hits': '1',
+250 verbose headers   'x-timer': 'S1495547960.553530,VS0,VE1',
+250 verbose headers   vary: 'Accept-Encoding' }
+251 silly get cb [ 200,
+251 silly get   { server: 'nginx/1.10.1',
+251 silly get     'content-type': 'application/json',
+251 silly get     'last-modified': 'Tue, 23 May 2017 05:12:21 GMT',
+251 silly get     etag: 'W/"5923c4b5-95479"',
+251 silly get     'content-encoding': 'gzip',
+251 silly get     'cache-control': 'max-age=300',
+251 silly get     'content-length': '44986',
+251 silly get     'accept-ranges': 'bytes',
+251 silly get     date: 'Tue, 23 May 2017 13:59:19 GMT',
+251 silly get     via: '1.1 varnish',
+251 silly get     age: '77',
+251 silly get     connection: 'keep-alive',
+251 silly get     'x-served-by': 'cache-nrt6124-NRT',
+251 silly get     'x-cache': 'HIT',
+251 silly get     'x-cache-hits': '1',
+251 silly get     'x-timer': 'S1495547960.553530,VS0,VE1',
+251 silly get     vary: 'Accept-Encoding' } ]
+252 verbose get saving mongoose to C:\Users\lenovo\AppData\Roaming\npm-cache\registry.npmjs.org\mongoose\.cache.json
+253 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+254 http fetch 200 https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz
+255 info retry fetch attempt 1 at 21:59:25
+256 info attempt registry request try #1 at 21:59:25
+257 http fetch GET https://registry.npmjs.org/connect-mongo/-/connect-mongo-1.3.2.tgz
+258 silly fetchAndShaCheck shasum d8630f26d95a7f851f9956b1e8cc6732f3b6aa30
+259 verbose addTmpTarball C:\Users\lenovo\AppData\Local\Temp\npm-17432-5620a8f2\registry.npmjs.org\connect-flash\-\connect-flash-0.1.1.tgz not in flight; adding
+260 verbose addTmpTarball already have metadata; skipping unpack for connect-flash@0.1.1
+261 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+262 silly resolveWithNewModule mongoose@4.10.2 checking installable status
+263 silly cache add args [ 'mongoose@latest', null ]
+264 verbose cache add spec mongoose@latest
+265 silly cache add parsed spec Result {
+265 silly cache add   raw: 'mongoose@latest',
+265 silly cache add   scope: null,
+265 silly cache add   escapedName: 'mongoose',
+265 silly cache add   name: 'mongoose',
+265 silly cache add   rawSpec: 'latest',
+265 silly cache add   spec: 'latest',
+265 silly cache add   type: 'tag' }
+266 silly addNamed mongoose@latest
+267 verbose addNamed "latest" is being treated as a dist-tag for mongoose
+268 info addNameTag [ 'mongoose', 'latest' ]
+269 silly mapToRegistry name mongoose
+270 silly mapToRegistry using default registry
+271 silly mapToRegistry registry https://registry.npmjs.org/
+272 silly mapToRegistry data Result {
+272 silly mapToRegistry   raw: 'mongoose',
+272 silly mapToRegistry   scope: null,
+272 silly mapToRegistry   escapedName: 'mongoose',
+272 silly mapToRegistry   name: 'mongoose',
+272 silly mapToRegistry   rawSpec: '',
+272 silly mapToRegistry   spec: 'latest',
+272 silly mapToRegistry   type: 'tag' }
+273 silly mapToRegistry uri https://registry.npmjs.org/mongoose
+274 verbose addNameTag registry:https://registry.npmjs.org/mongoose not in flight; fetching
+275 verbose get https://registry.npmjs.org/mongoose not expired, no request
+276 silly addNameTag next cb for mongoose with tag latest
+277 silly addNamed mongoose@4.10.2
+278 verbose addNamed "4.10.2" is a plain semver version for mongoose
+279 silly mapToRegistry name mongoose
+280 silly mapToRegistry using default registry
+281 silly mapToRegistry registry https://registry.npmjs.org/
+282 silly mapToRegistry data Result {
+282 silly mapToRegistry   raw: 'mongoose',
+282 silly mapToRegistry   scope: null,
+282 silly mapToRegistry   escapedName: 'mongoose',
+282 silly mapToRegistry   name: 'mongoose',
+282 silly mapToRegistry   rawSpec: '',
+282 silly mapToRegistry   spec: 'latest',
+282 silly mapToRegistry   type: 'tag' }
+283 silly mapToRegistry uri https://registry.npmjs.org/mongoose
+284 verbose addRemoteTarball https://registry.npmjs.org/mongoose/-/mongoose-4.10.2.tgz not in flight; adding
+285 verbose addRemoteTarball [ 'https://registry.npmjs.org/mongoose/-/mongoose-4.10.2.tgz',
+285 verbose addRemoteTarball   'c7473ebada5f985cdac8e4182d40776b1aaf5352' ]
+286 silly cache afterAdd connect-flash@0.1.1
+287 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\connect-flash\0.1.1\package\package.json not in flight; writing
+288 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+289 info retry fetch attempt 1 at 21:59:25
+290 info attempt registry request try #1 at 21:59:25
+291 http fetch GET https://registry.npmjs.org/mongoose/-/mongoose-4.10.2.tgz
+292 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\connect-flash\0.1.1\package\package.json written
+293 http fetch 200 https://registry.npmjs.org/mongoose/-/mongoose-4.10.2.tgz
+294 silly fetchAndShaCheck shasum aa59fd3a0287eaf407959a138228044b5dd6a6a3
+295 verbose addTmpTarball C:\Users\lenovo\AppData\Local\Temp\npm-17432-5620a8f2\registry.npmjs.org\requirejs\-\requirejs-2.3.3.tgz not in flight; adding
+296 verbose addTmpTarball already have metadata; skipping unpack for requirejs@2.3.3
+297 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+298 silly cache afterAdd requirejs@2.3.3
+299 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\requirejs\2.3.3\package\package.json not in flight; writing
+300 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+301 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\requirejs\2.3.3\package\package.json written
+302 silly fetchAndShaCheck shasum 34122034db66d983bcf6ab5adb26a24a70fef6e6
+303 verbose addTmpTarball C:\Users\lenovo\AppData\Local\Temp\npm-17432-5620a8f2\registry.npmjs.org\mongodb\-\mongodb-2.2.27.tgz not in flight; adding
+304 verbose addTmpTarball already have metadata; skipping unpack for mongodb@2.2.27
+305 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+306 silly cache afterAdd mongodb@2.2.27
+307 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\mongodb\2.2.27\package\package.json not in flight; writing
+308 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+309 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\mongodb\2.2.27\package\package.json written
+310 http fetch 200 https://registry.npmjs.org/connect-mongo/-/connect-mongo-1.3.2.tgz
+311 silly fetchAndShaCheck shasum 7cbf58dfff26760e5e00e017d0a85b4bc90b9d37
+312 verbose addTmpTarball C:\Users\lenovo\AppData\Local\Temp\npm-17432-5620a8f2\registry.npmjs.org\connect-mongo\-\connect-mongo-1.3.2.tgz not in flight; adding
+313 verbose addTmpTarball already have metadata; skipping unpack for connect-mongo@1.3.2
+314 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+315 silly cache afterAdd connect-mongo@1.3.2
+316 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\connect-mongo\1.3.2\package\package.json not in flight; writing
+317 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+318 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\connect-mongo\1.3.2\package\package.json written
+319 silly fetchAndShaCheck shasum c7473ebada5f985cdac8e4182d40776b1aaf5352
+320 verbose addTmpTarball C:\Users\lenovo\AppData\Local\Temp\npm-17432-5620a8f2\registry.npmjs.org\mongoose\-\mongoose-4.10.2.tgz not in flight; adding
+321 verbose addTmpTarball already have metadata; skipping unpack for mongoose@4.10.2
+322 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+323 silly cache afterAdd mongoose@4.10.2
+324 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\mongoose\4.10.2\package\package.json not in flight; writing
+325 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+326 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\mongoose\4.10.2\package\package.json written
+327 http 404 https://registry.npmjs.org/node-localstroage
+328 verbose headers { 'content-type': 'application/json',
+328 verbose headers   'cache-control': 'max-age=0',
+328 verbose headers   'content-length': '2',
+328 verbose headers   'accept-ranges': 'bytes',
+328 verbose headers   date: 'Tue, 23 May 2017 13:59:28 GMT',
+328 verbose headers   via: '1.1 varnish',
+328 verbose headers   age: '0',
+328 verbose headers   connection: 'keep-alive',
+328 verbose headers   'x-served-by': 'cache-nrt6125-NRT',
+328 verbose headers   'x-cache': 'MISS',
+328 verbose headers   'x-cache-hits': '0',
+328 verbose headers   'x-timer': 'S1495547968.860422,VS0,VE677',
+328 verbose headers   vary: 'Accept-Encoding' }
+329 silly get cb [ 404,
+329 silly get   { 'content-type': 'application/json',
+329 silly get     'cache-control': 'max-age=0',
+329 silly get     'content-length': '2',
+329 silly get     'accept-ranges': 'bytes',
+329 silly get     date: 'Tue, 23 May 2017 13:59:28 GMT',
+329 silly get     via: '1.1 varnish',
+329 silly get     age: '0',
+329 silly get     connection: 'keep-alive',
+329 silly get     'x-served-by': 'cache-nrt6125-NRT',
+329 silly get     'x-cache': 'MISS',
+329 silly get     'x-cache-hits': '0',
+329 silly get     'x-timer': 'S1495547968.860422,VS0,VE677',
+329 silly get     vary: 'Accept-Encoding' } ]
+330 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/node-localstroage
+330 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+330 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
+330 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+330 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+330 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+330 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+330 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+330 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+330 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+330 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+330 silly fetchPackageMetaData  error for node-localstroage@latest { Error: Registry returned 404 for GET on https://registry.npmjs.org/node-localstroage
+330 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+330 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
+330 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+330 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+330 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+330 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+330 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+330 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+330 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+330 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12) pkgid: 'node-localstroage', statusCode: 404, code: 'E404' }
+331 silly rollbackFailedOptional Starting
+332 silly rollbackFailedOptional Finishing
+333 silly runTopLevelLifecycles Finishing
+334 silly install printInstalled
+335 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/node-localstroage
+335 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+335 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
+335 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+335 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+335 verbose stack     at emitTwo (events.js:106:13)
+335 verbose stack     at Request.emit (events.js:191:7)
+335 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+335 verbose stack     at emitOne (events.js:96:13)
+335 verbose stack     at Request.emit (events.js:188:7)
+335 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+336 verbose statusCode 404
+337 verbose pkgid node-localstroage
+338 verbose cwd C:\Users\lenovo\Desktop\ttms
+339 error Windows_NT 6.3.9600
+340 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+341 error node v6.10.2
+342 error npm  v3.10.10
+343 error code E404
+344 error 404 Registry returned 404 for GET on https://registry.npmjs.org/node-localstroage
+345 error 404
+346 error 404 'node-localstroage' is not in the npm registry.
+347 error 404 You should bug the author to publish it (or use the name yourself!)
+348 error 404 It was specified as a dependency of 'NJBlog'
+349 error 404 Note that you can also install from a
+350 error 404 tarball, folder, http url, or git url.
+351 verbose exit [ 1, true ]

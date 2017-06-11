@@ -1,0 +1,193 @@
+<link rel="stylesheet" type="text/css" href="css/adminmovie.css">
+<div class="header_top">
+			<ul>
+				<li><a href="#/admin">首页</a></li>
+			 	<li><a href="#/adminmovie" style="color:#0088cc">管理影片</a></li>
+				<li><a href="#/admincenima">管理影院</a></li>
+				<li><a href="#/adminplay">演出计划</a></li>
+				<li><a href="#/adminticket">管理票务</a></li>
+			</ul>
+</div>
+
+<hr>
+<div class="row clearfix">
+	<div class="col-md-12 row">
+		 <div class="addmovie">
+			<button type="button" class="btn btn-primary btn-xs" onclick="addmovie()">新电影上架</button>
+			<div class="add" id="add">
+
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button  class="close" onclick="closeadd()">×</button>
+							<h4 class="modal-title" id="myModalLabel">添加/编辑电影</h4>
+						</div>
+						<div class="modal-body">
+
+							<form class="form-horizontal" role="form">
+
+								<div class="form-group">
+									<label for="title" class="col-sm-2 control-label">影片编号</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w300" id="name" ng-model="movie.id" ng-readonly="true"/>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="title" class="col-sm-2 control-label">影片名称</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w300" id="name" ng-model="movie.name" />
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="picture" class="col-sm-2 control-label">图片</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w200" id="picture" ng-model="movie.img1" />
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="price" class="col-sm-2 control-label">上映时间</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w200" id="date" ng-model="movie.date" />
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="author" class="col-sm-2 control-label">片长</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w200" id="times" ng-model="movie.times" />
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="author" class="col-sm-2 control-label">票价</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w200" id="price" ng-model="movie.price" />
+									</div>
+								</div>
+
+
+								<div class="form-group">
+									<label for="author" class="col-sm-2 control-label">导演</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w200" id="director" ng-model="movie.director" />
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="author" class="col-sm-2 control-label">主演</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w200" id="actor" ng-model="movie.actor" />
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="author" class="col-sm-2 control-label">电影简介</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w200" id="direction" ng-model="movie.direction" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="author" class="col-sm-2 control-label">电影详情</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w200" id="directions" ng-model="movie.directions" />
+									</div>
+								</div>
+
+							</form>
+
+						</div>
+						<div class="modal-footer">
+							<button type="button" ng-click="save()" class="btn btn-primary">
+							<span class="glyphicon glyphicon-floppy-disk"></span>保存</button>
+							<button type="button" class="btn btn-success" ng-click="clear()" data-dismiss="modal">
+								<span class="glyphicon glyphicon-refresh"></span> 
+								清空</button>
+							<button type="button" class="btn btn-danger" data-dismiss="modal">
+								<span class="glyphicon glyphicon-remove"></span> 
+								关闭</button>
+						</div>
+						<div class="err" ng-show="err" ng-bind="err"></div>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<table class="table">
+			<thead>
+				<tr>
+					<th class = "small_1">编号</th>
+					<th class = "small">影片名称</th>
+					<th class = "big">图片</th>
+					<th class = "small">上映时间</th>
+					<th class = "small_1">片长</th>
+					<th class = "small_1">票价</th>
+					<th class = "big">导演</th>
+					<th class = "big">主演</th>
+					<th class = "big">电影简介</th>
+					<th class = "big">电影详情</th>
+					<th class = "big"></th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="m in movies">
+					
+					<td class = "small_1">
+						{{m.id}}
+					</td>
+					<td class = "small">
+						{{m.name}}
+					</td>
+					<td class = "big">
+						<img ng-src="img/index/{{m.img1}}" class="cover" />
+					</td>
+					<td class = "small">
+						{{m.date}}
+					</td>
+					<td class = "small_1">
+						{{m.times}}
+					</td>
+					<td class = "small_1">
+						{{m.price}}
+					</td>
+					<td class = "big">
+						{{m.director}}
+					</td>
+					<td class = "big">
+					<span class = "span_1">
+						{{m.actor}}
+					</span>
+					</td>				
+					<td class = "big">
+					<span class = "span_2">
+						{{m.direction}}
+					</span>
+					</td>
+					<td class = "big">
+					<span class = "span_3">
+						{{m.directions}}
+					</span>
+					</td>
+				
+					<td>
+						<button type="button" class="btn btn-danger btn-xs" ng-click="del(m.id)">删除</button>
+						<button href="#modal-container-234446" role="button" class="btn btn-xs btn-primary" data-toggle="modal" ng-click="edit(m)" onclick="addmovie()">编辑</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<script type="text/javascript">
+	var add=document.getElementById('add');
+	function addmovie(){
+		console.log('dsd');
+		add.style.display="block";
+	}
+	function closeadd(){
+		console.log('dsd');
+		add.style.display="none";
+	}
+</script>

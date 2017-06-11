@@ -10,7 +10,8 @@
     "mongodb": "latest",
     "connect-mongo": "latest",
     "connect-flash": "latest",
-    "requirejs": "latest"
+    "requirejs": "latest",
+    "node-localstroage": "latest"
   },
   "devDependencies": {
     "should": "*",

@@ -2,15 +2,18 @@
  * Module dependencies.
  * author:sgm
  */
-
+ 
 var express = require('express'), 
     routes = require('./routes/routes'),
     user = require('./routes/user'),
     movie = require('./routes/movie'),
+    cenima = require('./routes/cenima'),
     http = require('http'), 
     path = require('path'),
+    url = require('url'),
     fs = require('fs'), 
-    colors = require('colors');
+    colors = require('colors'),
+    LocalStorage = require('node-localstorage').LocalStorage;
 
 var app = express();
 
@@ -26,6 +29,7 @@ app.configure(function () {
     app.use(express.session());
     app.use(app.router);
     app.use(express.static(path.join(__dirname, 'public')));
+
 });
 
 app.configure('development', function () {

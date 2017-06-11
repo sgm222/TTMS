@@ -1,23 +1,84 @@
-.movie-content{
-	width: 1000px;
-	height:1000px;
-	margin:20px auto;
-	border:1px solid #000;
+.header_top{
+     border-radius: 10px;
+     width: 45%;
+     margin:10px auto; 
+     font-size: 16px;
+     font-weight: bold;
+}
+.header_top h2{
+	float: left;
+	padding:10px;
+	/*background: #eaeaea;*/
+	color: pink;
+}
+.header_top input{
+	padding-left: 25px;
+	margin:0;
+	background-image: url(../img/indexarch.png);
+	background-repeat:no-repeat;
+	background-position: 5px 5px;
+}
+.header_top button{
+	background-color:#0088cc;
+	display: inline-block;
+	height:30px;
+	color: #fff;
+	border:none;
+	padding:0 10px;
+	border-radius: 4px;
+}
+.header_top a:hover{
+	text-decoration: none;
+	color:#000;
 	font-size: 16px;
 }
+.header_top span{
+	float: right;
+}
+.header_top ul{
+	display: flex;
+	Justify-content:space-between;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	background: #fff;
+	color: #0088cc;
+	margin-left: -30px;
+}
+.header_top ul li{
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	padding:0 5px;
+	margin:0;
+}
+.movie-content{
+	width: 1000px;
+	min-height:404px;
+	overflow: hidden;
+	margin:10px auto 100px auto;
+}
 .movie{
-	height:200px;
+	min-height:200px;
+	width:100%;
 	margin:10px;
-	overflow: hidden;
+	overflow: hidden; 
 	padding:20px;
-	overflow: hidden;
+	border-bottom:1px solid #ccc;
 }
 .movie-img{
-	width:200px;
+	width:20%;
 	height:200px;
 	float:left;
 	overflow: hidden;
 	margin-right: 20px;
+}
+.movie-right{
+	position:absolute;
+	margin-left: 240px;
+	width:40%;
+	height:100%;
+	overflow: hidden;
 }
 .movie img{
 	width:100%;
@@ -31,9 +92,11 @@
 }
 .movie p{
 	line-height: 20px;
-	height:20px;
 }
 .movie-jieshao{
 	margin-top: 10px;
-	width:800px;
+	width:60%;
+	height:80%;
+	margin-left: 20%;
+	overflow:hidden;
 }

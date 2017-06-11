@@ -16,11 +16,18 @@ define('controllers/layout',['../app'], function (app) {
                     url:'logout',
                     name:'注销'
                 };
-
-                $scope.signup = {
-                    url:'',
-                    name:'welcome:' + user.name
-                };
+      
+                if(user.flag == 'admin'){
+                     $scope.signup = {
+                        url:'admin',
+                        name:'welcome:' + user.name
+                    }
+                }else{
+                    $scope.signup = {
+                        url:'person',
+                        name:'welcome:' + user.name
+                    }
+                }
             } else {
                 $scope.login = {
                     url:'login',

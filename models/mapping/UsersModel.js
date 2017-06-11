@@ -10,6 +10,8 @@ var schema = new Schema({
     name:String,
     hash_password:String,
     flag:String
+},{
+  versionKey: false
 });
 
 schema.virtual("password").set(function (password) {

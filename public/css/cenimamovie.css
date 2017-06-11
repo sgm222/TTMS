@@ -1,0 +1,77 @@
+.header_top{
+     border-radius: 10px;
+     width: 45%;
+     margin:10px auto; 
+     font-size: 16px;
+     font-weight: bold;
+
+}
+.header_top h2{
+	float: left;
+	padding:10px;
+	/*background: #eaeaea;*/
+	color: pink;
+}
+.header_top input{
+	padding-left: 25px;
+	margin:0;
+	background-image: url(../img/indexarch.png);
+	background-repeat:no-repeat;
+	background-position: 5px 5px;
+}
+.header_top button{
+	background-color:#0088cc;
+	display: inline-block;
+	height:30px;
+	color: #fff;
+	border:none;
+	padding:0 10px;
+	border-radius: 4px;
+}
+.header_top a:hover{
+	text-decoration: none;
+	color:#000;
+	font-size: 16px;
+}
+.header_top span{
+	float: right;
+}
+.header_top ul{
+	display: flex;
+	Justify-content:space-between;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	background: #fff;
+	color: #0088cc;
+	margin-left: -30px;
+}
+.header_top ul li{
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	padding:0 5px;
+	margin:0;
+}
+
+.table{
+	width:90%;
+	height:auto;
+}
+.foot{
+    position:relative;
+    width:100%;
+    background-color: #333;
+    color:#eee;
+    text-align: center;
+    font-size: 16px;
+    height: 50px; 
+   /* clear: both;*/
+    margin-top: -50px;
+}
+
+.foot span{
+    line-height: 50px;
+}
+
+

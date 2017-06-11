@@ -4,7 +4,7 @@
  */
 var mongoose = require('mongoose');
 var fs = require('fs');
-
+mongoose.Promise = global.Promise; 
 mongoose.connect('mongodb://localhost/TTMS');
 
 var db = mongoose.connection;

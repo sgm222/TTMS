@@ -17,8 +17,12 @@
                     if (data.err) {
                         return $scope.err = data.err;
                     }
+                    localStorage.setItem("user",JSON.stringify($scope.user));
                     $scope.$parent.resetLogin(data);
-                    $location.path("/");
+                    if($scope.user.flag=="admin")
+                        $location.path("/admin");
+                    else
+                        $location.path("/");
                 });
             };
             $scope.register = function () {   

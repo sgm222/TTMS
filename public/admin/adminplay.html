@@ -1,0 +1,231 @@
+<link rel="stylesheet" type="text/css" href="css/adminplay.css">
+<div class="header_top">
+			<ul>
+				<li><a href="#/admin">首页</a></li>
+			 	<li><a href="#/adminmovie">管理影片</a></li>
+				<li><a href="#/admincenima">管理影院</a></li>
+				<li><a href="#/adminplay" style="color:#0088cc">演出计划</a></li>
+				<li><a href="#/adminticket">管理票务</a></li>
+			</ul>
+</div>
+
+<hr>
+<div class="row clearfix">
+	<div class="col-md-12 row">
+		 <div class="addmovie">
+			<button type="button" class="btn btn-primary btn-xs" onclick="addmovie()" style="margin-left:100px">添加演出计划</button>
+			<div class="add" id="add">
+
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button  class="close" onclick="closeadd()">×</button>
+							<h4 class="modal-title" id="myModalLabel">添加/编辑演出计划</h4>
+						</div>
+						<div class="modal-body">
+
+							
+							<form class="form-horizontal" role="form">
+
+								<div class="form-group">
+									<label for="title" class="col-sm-2 control-label">编号</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w300" id="name" ng-model="play.id" ng-readonly="true"/>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="title" class="col-sm-2 control-label">影院ID</label>
+									<div class="col-sm-10">
+										<!-- <input type="text" class="form-control w300" id="cenimaid" ng-model="play.cenima_id" ng-change="change()" onblur="checkName()" /> -->
+						<select class="select" ng-model="play.cenima_id" ng-change="change()">
+						<option ng-repeat="c in cenimas" >{{c.id}}</option></select>
+										<span style = "color:red">*</span> 
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="picture" class="col-sm-2 control-label">影厅ID</label>
+									<div class="col-sm-10">
+										<select class="select" ng-model="play.hall_id">
+											<option ng-repeat="h in halls" >{{h.id}}</option></select>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="price" class="col-sm-2 control-label">电影ID</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w200" id="movid" ng-model="play.movie_id" onblur="checkMovid()" /><span style = "color:red">*</span> 
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="author" class="col-sm-2 control-label">票价</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w200" id="price" ng-model="play.movie_price" onblur="checkPrice()" />
+										<span style = "color:red">*</span> 
+
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="author" class="col-sm-2 control-label">开始时间</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control w200" id="start" ng-model="play.movie_start" onblur="checkStart()" placeholder = "如：11:00" />
+										<span style = "color:red">*</span> 
+
+									</div>
+								</div>
+							</form>
+
+						</div>
+						<div class="modal-footer">
+							<button type="button" ng-click="save()" class="btn btn-primary" onclick="checkAll()">
+							<span class="glyphicon glyphicon-floppy-disk"></span>保存</button>
+							<button type="button" class="btn btn-success" ng-click="clear()" data-dismiss="modal">
+								<span class="glyphicon glyphicon-refresh"></span> 
+								清空</button>
+							<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="closeadd()">
+								<span class="glyphicon glyphicon-remove"></span> 
+								关闭</button>
+						</div>
+						<div class="err" ng-show="err" ng-bind="err"></div>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<table class="table">
+			<thead>
+				<tr>
+					<th class = "small_1">编号</th>
+					<th class = "big">影院名称</th>
+					<th class = "small">影厅名称</th>
+					<th class = "big">电影名称</th>
+					<th class = "small_1">票价</th>
+					<th class = "small">开始时间</th>
+					<th class = "small">结束时间</th>
+					<th class = "big"></th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="p in plays">
+					
+					<td class = "small_1">
+						{{p.id}}
+					</td>
+					<td class = "big">
+						{{p.cenima_name}}
+					</td>
+					<td class = "small">
+						{{p.hall_name}}
+					</td>
+					<td class = "big">
+						{{p.movie_name}}
+					</td>
+					<td class = "small_1">
+						{{p.movie_price}}
+					</td>
+					<td class = "small">
+						{{p.movie_start}}
+					</td>
+					<td class = "small">
+						{{p.movie_end}}
+					</td>				
+				
+					<td>
+						<button type="button" class="btn btn-danger btn-xs" ng-click="del(p.id)">删除</button>
+						<button href="#modal-container-234446" role="button" class="btn btn-xs btn-primary" data-toggle="modal" ng-click="edit(p)" onclick="addmovie()">编辑</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<script type="text/javascript">
+	var add=document.getElementById('add');
+	function addmovie(){
+		console.log('dsd');
+		add.style.display="block";
+	}
+	function closeadd(){
+		console.log('dsd');
+		add.style.display="none";
+	}
+
+	function checkName(){
+		
+		var Arr =[]; 
+		Arr = $scope.cenimas;
+		alert(Arr);
+		var reg = /^[1-9]|[1-9][0-9]$/;
+		var block = $('#cenimaid+span').get(0);
+		// if(reg.test($('#cenimaid').val()) == false)
+		if(Arr.indexof($('#cenimaid').val()) == -1)
+		{
+			
+			block.innerHTML = 'id有误';
+			block.style.color = 'red';
+			return false;
+		}
+		block.innerHTML = '√';
+		block.style.color = 'green';
+		return true;
+		
+	}
+
+	function checkMovid(){
+		var block = $('#movid+span').get(0);
+		if($('#movid').val().length == 0)
+		{
+			
+			block.innerHTML = '不能为空';
+			block.style.color = 'red';
+			return false;
+		}
+		block.innerHTML = '√';
+		block.style.color = 'green';
+		return true;
+	}
+
+	function checkPrice(){
+		var block = $('#price+span').get(0);
+		var reg = /^\d(\.\d)?$|^[1-9]\d(\.\d)?$/;
+		if(reg.test($('#price').val()) == false){
+			block.innerHTML = '价格格式不正确';
+			block.style.color = 'red';
+			return false;
+		}
+
+		block.innerHTML = '√';
+		block.style.color = 'green';
+		return true;
+	}
+
+	function checkStart(){
+
+		var block = $('#start+span').get(0);
+		var Reg =  /^((\d)|(1\d)|(2[0-4])):[0-5]+[0-9]$/;
+
+		if (Reg.test($('#start').val()) == false) 
+				{
+					block.innerHTML = '时间格式错误';
+					block.style.color = 'red';
+					return false;
+				}
+				block.innerHTML = '√';
+				block.style.color = 'green';
+				return true;
+	}
+
+	function checkAll(){
+		if(!checkMovid()||!checkPrice()||!checkStart()){
+			alert("数据有误！不能提交！");
+			return false;
+		}
+		else{
+			closeadd();
+			return true;
+		}
+	}
+</script>

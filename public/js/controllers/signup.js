@@ -6,7 +6,7 @@ define('controllers/signup',[], function () {
     var SignUpController = ["$scope", "$rootScope", "$http", "$location", function ($scope, $rootScope, $http, $location) {
         $rootScope.title = "SignUp";
         $scope.user = {
-            name:'',
+            name:'', 
             password:'',
             repeatpassword:'',
             flag:''
